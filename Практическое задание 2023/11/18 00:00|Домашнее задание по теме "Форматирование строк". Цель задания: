@@ -1,0 +1,26 @@
+#Использование %
+team1_num=52
+print("В команде Мастера кода участников: %(team1_num)s ! " % {'team1_num': team1_num})
+team2_num=99
+print("В команде Мастера кода участников: %(team1_num)s и %(team2_num)x ! " % {'team1_num': team1_num,
+                                                                                'team2_num':team2_num})
+
+#Использование format()
+score_2=0
+print("Команда Волшебники данных решила задач: {} !".format(score_2))
+team1_time=3.5
+print("Волшебники данных решили задачи за {} ч !".format(team1_time))
+
+#Использование f-строк
+score_1=-4
+print(f'Команды решили {score_1} и {score_2} задач.')
+if score_1 > score_2 or score_1 == score_2 and team1_time > team2_time:
+    challenge_result='Мастера'
+elif score_1 < score_2 or score_1 == score_2 and team1_time < team2_time:
+    challenge_result='Волшебники'
+else:
+    challenge_result='Ничья!'
+print(f"Результат битвы: победа команды {challenge_result} кода!")
+tasks_total=5
+time_avg=550000
+print(f"Сегодня было решено {tasks_total} задач, в среднем по {time_avg} секунды на задачу!.")
